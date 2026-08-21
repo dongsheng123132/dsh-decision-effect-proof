@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+import { inspectDecisionEffects, verifyDecisionEffects } from '../lib/decision-effect-proof.mjs'
+const [command, evidencePath, artifactDir] = process.argv.slice(2)
+try { if (command === 'inspect' && evidencePath && !artifactDir) console.log(JSON.stringify(await inspectDecisionEffects({ evidencePath }), null, 2)); else if (command === 'verify' && evidencePath && artifactDir) { const result = await verifyDecisionEffects({ evidencePath, artifactDir }); console.log(JSON.stringify(result, null, 2)); if (result.status !== 'verified') process.exitCode = 2 } else { console.error('Usage: dsh-decision-effect-proof inspect <workspace-relative-evidence.json> | verify <workspace-relative-evidence.json> <workspace-relative-artifact-dir>'); process.exitCode = 1 } } catch (error) { console.error(JSON.stringify({ ok: false, code: error.code ?? 'ERROR', message: error.message })); process.exitCode = 1 }

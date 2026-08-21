@@ -1,0 +1,1 @@
+{"mcpServers":{"dsh-decision-effect-proof":{"command":"node","args":["${pluginDir}/mcp-server.mjs"]}}}

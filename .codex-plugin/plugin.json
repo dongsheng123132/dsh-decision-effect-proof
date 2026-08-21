@@ -1,0 +1,16 @@
+{
+  "name": "dsh-decision-effect-proof",
+  "version": "0.1.0",
+  "description": "Content-addressed proof that DSH authorization decisions and recorded effects agree",
+  "author": { "name": "hfshfg" },
+  "interface": {
+    "displayName": "DSH Decision Effect Proof",
+    "shortDescription": "Reconcile authorization and effect receipts.",
+    "longDescription": "Offline verification of body-free, revision-bound authorization and effect envelopes: request binding, confirmation, state freshness, denied-effect absence, outcome settlement, duplicate detection and content-addressed reporting.",
+    "developerName": "hfshfg",
+    "category": "Developer Tools",
+    "capabilities": ["Decision/effect reconciliation", "Confirmation binding", "Content-addressed evidence"],
+    "defaultPrompt": ["Verify these recorded DSH decision and effect receipts without executing the action."]
+  },
+  "mcpServers": "./.mcp.json"
+}
