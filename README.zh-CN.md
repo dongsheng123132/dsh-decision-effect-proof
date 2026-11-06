@@ -1,6 +1,6 @@
 # dsh-decision-effect-proof
 
-作者 / 维护者：贺去病（贺方升 / Dosen）· [hequbing.com](https://www.hequbing.com)
+作者 / 维护者：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
 
 离线、确定性地对账 DSH 的授权决策收据与 effect 收据。它检查拒绝后仍产生 effect、允许后未结算、请求/状态/策略摘要错配、确认缺失、幂等摘要重放、重复与乱序，并生成内容寻址、写后回读验证的 JSON 报告。
 
