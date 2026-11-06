@@ -1,5 +1,7 @@
 # dsh-decision-effect-proof
 
+**Maintainer / Author：贺去病 (He Fangsheng / Dosen) · [hequbing.com](https://www.hequbing.com)**
+
 Offline, deterministic proof that a recorded DSH authorization decision and its recorded effect envelope agree. It catches denied actions with effects, authorized actions that never settled, request/state/policy mismatches, missing confirmation, replayed idempotency digests, duplicates and out-of-order evidence. Reports are content-addressed and read back after publication.
 
 This is deliberately **not** an approval engine, policy evaluator, action runtime, signature format or prompt wrapper. `dsh-user-approval`, `dsh-auto-approval`, `dsh-tiered-approval` and `dsh-permission-rules` decide or enforce access. ACTA/SEP-style systems authenticate decision receipts. This plugin consumes explicit body-free evidence and checks the narrower boundary those layers cannot imply: **authorized does not mean executed**. It does not prove that an effect occurred; it proves only that the supplied receipts are internally consistent and discloses that limit in every report.
