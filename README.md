@@ -1,6 +1,6 @@
 # dsh-decision-effect-proof
 
-**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; Dosen) · [hequbing.com](https://www.hequbing.com)**
+**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
 Offline, deterministic proof that a recorded DSH authorization decision and its recorded effect envelope agree. It catches denied actions with effects, authorized actions that never settled, request/state/policy mismatches, missing confirmation, replayed idempotency digests, duplicates and out-of-order evidence. Reports are content-addressed and read back after publication.
 
